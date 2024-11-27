@@ -62,7 +62,7 @@ github_host() {
     curl -s "https://api.github.com/repos/llvm/llvm-project/releases/tags/llvmorg-${llvm_version}" |
       jq .assets[].browser_download_url |
       tee ./urls.txt |
-      grep 'clang%2Bllvm.*tar.xz"$' |
+      grep 'LLVM.*tar.xz"$' |
       tee ./filtered_urls.txt |
       xargs -n1 curl -L -O
   )

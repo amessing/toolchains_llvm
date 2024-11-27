@@ -536,6 +536,11 @@ _llvm_distributions = {
     "LLVM-19.1.3-macOS-ARM64.tar.xz": "80a54a467e9e770a76ba9670e89a235224ec47578cc4d4dbd928592813732518",
     "LLVM-19.1.3-macOS-X64.tar.xz": "52ea30f3089af4e086a98638a16167c5a20d253d43f7146c058e3e9e6d33274f",
     "LLVM-19.1.3-Windows-X64.tar.xz": "1077267ca353a1e236055ed4b57d6a404d09c40b01bd27dc882870395cdc1aae",
+
+    # 19.1.4
+    "LLVM-19.1.4-Linux-X64.tar.xz": "da7e0f571b440e5ef9ae6e061ae6afc1071179e18f86f77cf630dabbed11a5f6",
+    "LLVM-19.1.4-macOS-ARM64.tar.xz": "52245bc374fdb9f3665046fe7319b5b8165ca2732053c74f06ba1e90e142ed8e",
+    "LLVM-19.1.4-macOS-X64.tar.xz": "eedb896c193cc3bad35a9f132d91e16cf73d33723f35d63dcaae4755872674c2",
 }
 
 # Note: Unlike the user-specified llvm_mirror attribute, the URL prefixes in
@@ -598,6 +603,7 @@ _llvm_distributions_base_url = {
     "19.1.1": "https://github.com/llvm/llvm-project/releases/download/llvmorg-",
     "19.1.2": "https://github.com/llvm/llvm-project/releases/download/llvmorg-",
     "19.1.3": "https://github.com/llvm/llvm-project/releases/download/llvmorg-",
+    "19.1.4": "https://github.com/llvm/llvm-project/releases/download/llvmorg-",
 }
 
 def _get_auth(ctx, urls):
